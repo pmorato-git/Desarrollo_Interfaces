@@ -9,8 +9,15 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
         MouseDown="Window_MouseDown">
-    <Grid>
+    <Border
+        CornerRadius="50"
+        Background="#3a86ff"
+        BorderBrush="#8338ec"
+        BorderThickness="10">
         
-    </Grid>
+        
+    </Border>
 </Window>
