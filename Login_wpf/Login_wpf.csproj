@@ -13,6 +13,7 @@
     <None Remove="Imagenes\boton-maximizar.png" />
     <None Remove="Imagenes\cerrar.png" />
     <None Remove="Imagenes\minimizar3.png" />
+    <None Remove="Imagenes\ParedLadrilloJuntaRoja.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +27,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Imagenes\minimizar3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\ParedLadrilloJuntaRoja.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

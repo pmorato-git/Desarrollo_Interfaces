@@ -12,12 +12,151 @@
         Background="Transparent"
         AllowsTransparency="True"
         MouseDown="Window_MouseDown">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <ImageBrush ImageSource="/Imagenes/ParedLadrilloJuntaRoja.png"/>
+        </Border.Background>
     <Border
-        CornerRadius="50"
-        Background="#3a86ff"
-        BorderBrush="#8338ec"
-        BorderThickness="10">
+        CornerRadius="20"    
+        BorderThickness="5"
+        Opacity="0.8">
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ff006e" Offset="0" />
+                <GradientStop Color="#fb5607" Offset="0.5" />
+                <GradientStop Color="#ffbe0b" Offset="1" />
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="#ff006e" Offset="0" />
+                <GradientStop Color="#8338ec" Offset="1" />
+            </LinearGradientBrush>
+        </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="15"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Log in"
+                               Foreground="DarkGray"
+                               FontSize="15"
+                               FontFamily="Montserrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                    <Button x:Name="btnMinimizar"
+                            Background="Blue"
+                            BorderThickness="0"
+                            Content="_"
+                            Foreground="White"
+                            FontSize="15"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimizar_Click">
+                        
+                    </Button>
+                    <Button x:Name="btnCerrar"
+                            Background="#ff006e"
+                            BorderThickness="0"
+                            Content="X"
+                            Foreground="White"
+                            FontSize="15"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Click="btnCerrar_Click">
+
+                    </Button>
+                </Grid>
+
+                <StackPanel Width="250"
+                            Grid.Row="2"
+                            Orientation="Vertical"
+                            Margin="0,35,0,10">
+                    <Image Source="/Imagenes/alien.png"
+                           Width="100"
+                           Height="100"/>
+                    <TextBlock Text="Mi login"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                    <TextBlock Text="Bienvenido a la pagina"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="10,10,0,0"/>
+                    
+                    <TextBlock Text="Username"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Margin="0,35,0,0"/>
+
+                    <TextBox x:Name="txtUser"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Background="Transparent"
+                               CaretBrush="white"
+                               BorderBrush="LightGray"
+                               BorderThickness="0,0,0,5"
+                               Height="28"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="0,5,0,0"/>
+
+                    <TextBlock Text="Password"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Margin="0,35,0,0"/>
+
+                    <TextBox x:Name="txtPassword"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Background="Transparent"
+                               CaretBrush="white"
+                               BorderBrush="LightGray"
+                               BorderThickness="0,0,0,5"
+                               Height="28"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+            </Grid>
         
-        
+    </Border>
     </Border>
 </Window>
